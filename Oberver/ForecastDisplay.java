@@ -1,4 +1,4 @@
-public class ForecastDisplay implements Observer, DisplayElement{
+public class ForecastDisplay implements Observer, DisplayElement {
 	float temperature;
 	float humidity;
 	float pressure;
@@ -9,10 +9,10 @@ public class ForecastDisplay implements Observer, DisplayElement{
 		this.weatherData.registerObserver(this);
 	}
 
-	public void update(float temperature, float humidity, float pressure) {
-		this.temperature = temperature;
-		this.humidity = humidity;
-		this.pressure = pressure;
+	public void update() {
+		this.temperature = weatherData.getTemperature();
+		this.humidity = weatherData.getHumidity();
+		this.pressure = weatherData.getPressure();
 		display();
 	}
 

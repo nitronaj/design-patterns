@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class WeatherData implements Subject{
+public class WeatherData implements Subject {
 	private List<Observer> observers;
 	private float temperature;
 	private float humidity;
@@ -9,6 +9,18 @@ public class WeatherData implements Subject{
 
 	public WeatherData() {
 		observers = new ArrayList<Observer>();
+	}
+
+	public float getTemperature() {
+		return temperature;
+	}
+
+	public float getHumidity() {
+		return humidity;
+	}
+
+	public float getPressure() {
+		return pressure;
 	}
 
 	public void registerObserver(Observer o) {
@@ -20,8 +32,8 @@ public class WeatherData implements Subject{
 	}
 
 	public void notifyObservers() {
-		for(Observer observer : observers) {
-			observer.update(temperature, humidity, pressure);
+		for (Observer observer : observers) {
+			observer.update();
 		}
 	}
 
