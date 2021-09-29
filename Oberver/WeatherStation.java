@@ -9,7 +9,10 @@ public class WeatherStation {
 		HeatIndexDisplay heatIndexDisplay = new HeatIndexDisplay(weatherData);
 
 		weatherData.setMeasurement(80, 65, 30.4f);
-
+		weatherData.setMeasurement(60, 65, 28.4f);
+		weatherData.setMeasurement(80, 65, 30.4f);
+		weatherData.setMeasurement(80, 65, 30.4f);
+		weatherData.setMeasurement(100, 65, 31.4f);
 		// currentDisplay.display();
 	}
 }

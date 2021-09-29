@@ -1,7 +1,11 @@
 public class StatisticsDisplay implements Observer, DisplayElement {
-	float temperature;
-	float humidity;
-	float pressure;
+	float temperature ;
+	float min = 0;
+	float max = 0;
+	float sum = 0;
+	float avg = 0;
+	int count = 0;
+
 	WeatherData weatherData = new WeatherData();
 
 	public StatisticsDisplay(WeatherData weatherData) {
@@ -11,13 +15,22 @@ public class StatisticsDisplay implements Observer, DisplayElement {
 
 	public void update() {
 		this.temperature = weatherData.getTemperature();
-		this.humidity = weatherData.getHumidity();
-		this.pressure = weatherData.getPressure();
+
+		if(temperature >= max) {
+			max = temperature;
+		} else if( temperature > min ){
+			min = temperature;
+		}
+
+		count += 1;
+		sum += temperature;
+		avg = sum / count;
+
 		display();
 	}
 
 	public void display() {
-		System.out.println("Avg/Max/Min temperature = " + temperature + "/" + temperature + "/" + temperature);
+		System.out.printf("Avg/Max/Min temperature = %.1f/%.1f/%.1f\n",avg,max,min);
 	}
 
 }
