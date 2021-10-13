@@ -22,10 +22,10 @@ public class StarbuzzCoffee {
 
 		// DarkRoast double mocha with whip size GRANDE
 		Beverage beverage3 = new DarkRoast();
-		beverage3.setSize(Size.GRANDE);
 		beverage3 = new Mocha(beverage3);
 		beverage3 = new Mocha(beverage3);
 		beverage3 = new Whip(beverage3);
+		beverage3.setSize(Size.GRANDE);
 		System.out.println(beverage3.getDescription() + " Size: " + beverage3.getSize() + " $" + beverage3.cost());
 
 		// HouseBlend with soy latte mocha and whip
