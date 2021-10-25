@@ -1,4 +1,4 @@
-package beverage;
+package starbuzzWithSizes.beverage;
 
 public class HouseBlend extends Beverage {
 	public HouseBlend() {

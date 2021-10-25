@@ -1,11 +1,12 @@
-import beverage.Beverage;
-import beverage.DarkRoast;
-import beverage.Espresso;
-import beverage.HouseBlend;
-import beverage.Beverage.Size;
-import condiment.Mocha;
-import condiment.Soy;
-import condiment.Whip;
+
+import starbuzzWithSizes.beverage.Beverage;
+import starbuzzWithSizes.beverage.DarkRoast;
+import starbuzzWithSizes.beverage.Espresso;
+import starbuzzWithSizes.beverage.HouseBlend;
+import starbuzzWithSizes.beverage.Beverage.Size;
+import starbuzzWithSizes.condiment.Mocha;
+import starbuzzWithSizes.condiment.Soy;
+import starbuzzWithSizes.condiment.Whip;
 
 public class StarbuzzCoffee {
 

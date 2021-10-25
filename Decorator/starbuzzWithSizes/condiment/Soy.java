@@ -1,6 +1,6 @@
-package condiment;
+package starbuzzWithSizes.condiment;
 
-import beverage.Beverage;
+import starbuzzWithSizes.beverage.Beverage;
 
 public class Soy extends CondimentDecorator {
 

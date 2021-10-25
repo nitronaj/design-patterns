@@ -1,6 +1,6 @@
-package condiment;
+package starbuzzWithSizes.condiment;
 
-import beverage.Beverage;
+import starbuzzWithSizes.beverage.Beverage;
 
 public abstract class CondimentDecorator extends Beverage {
 	Beverage beverage;

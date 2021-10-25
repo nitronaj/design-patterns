@@ -1,4 +1,4 @@
-package beverage;
+package starbuzzWithSizes.beverage;
 
 public abstract class Beverage {
 	public enum Size {

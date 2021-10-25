@@ -1,15 +1,15 @@
-package condiment;
+package starbuzzWithSizes.condiment;
 
-import beverage.Beverage;
+import starbuzzWithSizes.beverage.Beverage;
 
-public class Whip extends CondimentDecorator {
+public class SteamedMilk extends CondimentDecorator {
 
-	public Whip(Beverage beverage) {
+	public SteamedMilk(Beverage beverage) {
 		this.beverage = beverage;
 	}
 
 	public String getDescription() {
-		return beverage.getDescription() + ", Whip";
+		return beverage.getDescription() + ", Steamed Milk";
 	}
 
 	public double cost() {
